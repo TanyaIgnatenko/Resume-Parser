@@ -1,6 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/index.py" }
-  ]
+  "functions": {
+    "api/**/*.py": {
+      "excludeFiles": [
+        "../**",            // exclude everything outside backend
+        "!**/*.py",         // keep source
+        "!requirements.txt" // keep deps manifest
+      ]
+    }
+  },
+  "routes": [{ "src": "/api/(.*)", "dest": "/api/index.py" }]
 }
