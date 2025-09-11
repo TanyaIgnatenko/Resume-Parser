@@ -1,0 +1,11 @@
+# backend/.vercelignore
+# Exclude the frontend and other large stuff from the backend project build context
+../frontend/
+../.git/
+../.github/
+../*.md
+../*.png
+../*.jpg
+../*.svg
+../.vscode/
+../.idea/
