@@ -144,4 +144,4 @@ curl -X POST "http://localhost:8000/parse" \
 
 ## 📌 License
 
-MIT License. Free to use & modify.
+MIT License. Free to use & modify
