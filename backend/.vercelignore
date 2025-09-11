@@ -1,11 +1,18 @@
-# backend/.vercelignore
-# Exclude the frontend and other large stuff from the backend project build context
+# keep only backend in the deployment context
 ../frontend/
 ../.git/
 ../.github/
+../.vscode/
+../.idea/
 ../*.md
 ../*.png
 ../*.jpg
 ../*.svg
-../.vscode/
-../.idea/
+
+# internal junk
+__pycache__/
+.venv/
+venv/
+tests/
+data/
+*.log

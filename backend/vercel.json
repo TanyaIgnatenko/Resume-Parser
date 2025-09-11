@@ -1,14 +1,4 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "routes": [{ "src": "/api/(.*)", "dest": "/api/index.py" }],
-  "functions": {
-    "api/**/*.py": {
-      "excludeFiles": [
-        ".venv/**",
-        "__pycache__/**",
-        "tests/**",
-        "data/**"
-      ]
-    }
-  }
+  "routes": [{ "src": "/api/(.*)", "dest": "/api/index.py" }]
 }
