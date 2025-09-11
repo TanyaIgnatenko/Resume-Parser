@@ -98,13 +98,19 @@ For NER tasks, **accuracy is misleading** because the majority of tokens are *no
 
 ---
 
-## 📈 Current Improvements
+## 🔧 Currently Improving Model Accuracy
 
-Right now, I am working on improving model accuracy by:  
-- Expanding the dataset with **synthetic resumes** (data augmentation).  
-- Using **active learning** to prioritize uncertain samples for annotation.  
-- Adding new entity types (Certifications, Projects).  
-- Experimenting with **transformer-based embeddings (spaCy + RoBERTa/BERT)**.  
+I'm currently improving the accuracy of the Resume Parser using these methodologies:
+
+### 📊 Data-Centric
+- Expanding dataset with more annotated resumes (beyond current 50).  
+- Annotating more **Skills** and **Work Experience** entities to address weaker categories.  
+- Reviewing and enforcing **annotation consistency** (e.g., clear rules for job titles, companies, skills).  
+
+### 🤖 Model-Centric
+- Experimenting with larger **spaCy models** (`en_core_web_md`, `en_core_web_lg`).  
+- Fine-tuning **transformer-based models** (BERT, RoBERTa) using `spacy-transformers`.  
+- Hyperparameter tuning: adjusting **learning rate, batch size, training iterations**.
 
 ---
 
