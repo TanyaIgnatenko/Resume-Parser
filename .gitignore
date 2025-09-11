@@ -1,0 +1,66 @@
+# ------------------------
+# Global / common ignores
+# ------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+.env
+.env.local
+.env.*.local
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.iml
+
+# ------------------------
+# Frontend (Node / Vite / React)
+# ------------------------
+frontend/node_modules/
+frontend/.parcel-cache/
+frontend/.pnp/
+frontend/.pnp.js
+frontend/dist/
+frontend/build/
+frontend/.turbo/
+frontend/.next/   # (if you ever switch to Next.js)
+
+# lockfiles (optional — keep if you want reproducible builds)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ------------------------
+# Backend (Python / FastAPI)
+# ------------------------
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/.coverage
+backend/coverage.xml
+
+# Virtual environments
+backend/.venv/
+backend/venv/
+venv/
+.venv/
+
+# Build / packaging
+backend/build/
+backend/dist/
+backend/*.egg-info/
+
+# ------------------------
+# Data / large files
+# ------------------------
+*.sqlite3
+*.db
+*.tar.gz
+*.zip

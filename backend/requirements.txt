@@ -1,0 +1,6 @@
+fastapi==0.115.5
+uvicorn[standard]==0.30.6
+spacy==3.8.7
+pdfplumber==0.10.3
+pdfminer.six==20221105
+docx2txt==0.8
