@@ -3,7 +3,7 @@
 const API_BASE_URL =
   (typeof process !== "undefined" && (process as any).env?.NEXT_PUBLIC_API_URL) ||
   (import.meta as any)?.env?.VITE_API_URL ||
-  "http://localhost:8000";
+  "http://212.164.218.218:45106";
 
 /** Normalized data your UI will consume */
 export interface ParsedResumeData {
