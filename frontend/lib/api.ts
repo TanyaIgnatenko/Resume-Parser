@@ -83,7 +83,7 @@ export async function uploadResume(file: File): Promise<ApiResponse> {
 
   let res: Response;
   try {
-    res = await fetch(`${API_BASE_URL}/parse`, {
+    res = await fetch(`/parse`, {
       method: "POST",
       body: formData,
     });
