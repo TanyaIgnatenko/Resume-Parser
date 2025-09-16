@@ -16,7 +16,7 @@ Built with **spaCy (NER model)**, **FastAPI backend**, and **React frontend**.
 
 - **Dataset:** 50 resumes (42 train, 8 dev, 10 test)  
 - **Model:** Custom **spaCy NER** (trained from scratch)  
-- **Best Test F1-score:** **84.58%** (overall)  
+- **Best Test F1-score:** **91.33%** (overall)  
 - **Entities extracted:** Skills, Work Experience, Education, Languages  
 
 ---
@@ -24,10 +24,10 @@ Built with **spaCy (NER model)**, **FastAPI backend**, and **React frontend**.
 ## 🖼️ Screenshots
 
 **Upload Page**  
-![Upload Resume Page](./screenshots/upload.jpg)
+![Upload Resume Page](./screenshots/upload-2.png)
 
 **Parsed Resume Results**  
-![Parsed Resume Results](./screenshots/results.jpg)
+![Parsed Resume Results](./screenshots/results-3.png)
 
 ---
 
