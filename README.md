@@ -14,7 +14,7 @@ Built with **spaCy (NER model)**, **FastAPI backend**, and **React frontend**.
 ![Dataset](https://img.shields.io/badge/Dataset-50%20resumes-orange)
 ![NER F1](https://img.shields.io/badge/F1%20Score-84.58%25-brightgreen)
 
-- **Dataset:** 50 resumes (42 train, 8 dev, 10 test)  
+- **Dataset:** 60 resumes (42 train, 8 dev, 10 test)  
 - **Model:** Custom **spaCy NER** (trained from scratch)  
 - **Best Test F1-score:** **91.33%** (overall)  
 - **Entities extracted:** Skills, Work Experience, Education, Languages  
