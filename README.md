@@ -51,7 +51,7 @@ Built with **spaCy (NER model)**, **FastAPI backend**, and **React frontend**.
 - **Frontend:** React / Next.js  
 - **Parsing Tools:** pdfplumber, docx2txt  
 - **Data Annotation:** Label Studio  
-- **DevOps & Tools:** Git, Virtualenv, npm  
+- **DevOps & Tools:** Git, npm, Vercel
 - **Methodologies:** Data preprocessing, tokenization, regex bootstrapping, model evaluation with F1/Precision/Recall  
 
 ---
@@ -80,18 +80,19 @@ On the held-out **test set (10 resumes)**:
 
 | Metric | Score |
 |--------|-------|
-| **Precision (NER P)** | 87.70% |
-| **Recall (NER R)**    | 81.68% |
-| **F1-score (NER F)**  | 84.58% |
+| **Precision (NER P)** | 91.12% |
+| **Recall (NER R)**    | 91.55% |
+| **F1-score (NER F)**  | 91.33% |
 
 ### Per-entity performance:
 
-| Entity            | Precision | Recall | F1  |
-|-------------------|-----------|--------|-----|
-| 🎓 Education      | 81.82     | 81.82  | 81.82 |
-| 💼 Work Exp.      | 88.89     | 72.73  | 80.00 |
-| 🎯 Skill          | 87.28     | 80.75  | 83.89 |
-| 🌍 Language       | 100.00    | 100.00 | 100.00 |
+| Entity     | Precision | Recall | F1    |
+|------------|-----------|--------|-------|
+| 🎓 Education | 86.21     | 75.76  | 80.65 |
+| 💼 Work Exp. | 69.23     | 81.82  | 75.00 |
+| 🎯 Skill     | 94.96     | 95.65  | 95.31 |
+| 🌐 Language  | 100.00    | 100.00 | 100.00 |
+
 
 ⚡ **Why not accuracy?**  
 For NER tasks, **accuracy is misleading** because the majority of tokens are *not entities*. Instead, the **F1-score (harmonic mean of precision & recall)** is the gold-standard metric in NLP.  
@@ -104,7 +105,7 @@ I'm currently improving the accuracy of the Resume Parser using these methodolog
 
 ### 📊 Data-Centric
 - Expanding dataset with more annotated resumes (beyond current 50).  
-- Annotating more **Skills** and **Work Experience** entities to address weaker categories.  
+- Annotating more **Work Experience** and **Education** entities to address weaker categories.  
 - Reviewing and enforcing **annotation consistency** (e.g., clear rules for job titles, companies, skills).  
 
 ### 🤖 Model-Centric
