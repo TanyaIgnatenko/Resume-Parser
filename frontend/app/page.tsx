@@ -176,7 +176,7 @@ export default function HomePage() {
 
           {/* Footer */}
           <div className="text-center mt-8">
-            <p className="text-sm text-gray-500">© 2024 Resume Parser. All rights reserved.</p>
+            <p className="text-sm text-gray-500">© 2025 Resume Parser. All rights reserved.</p>
           </div>
         </div>
       </main>
