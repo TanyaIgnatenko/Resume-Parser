@@ -60,7 +60,7 @@ Built with **spaCy (NER model)**, **FastAPI backend**, and **React frontend**.
 
 The custom **spaCy NER model** was trained on manually annotated resumes.
 
-- **Dataset size:** 50 resumes  
+- **Dataset size:** 60 resumes  
 - **Split:**  
   - 42 resumes → Training  
   - 8 resumes → Development (validation)  
