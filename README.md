@@ -11,7 +11,7 @@ Built with **spaCy (NER model)**, **FastAPI backend**, and **React frontend**.
 ![spaCy](https://img.shields.io/badge/NLP-spaCy-green)
 ![FastAPI](https://img.shields.io/badge/API-FastAPI-teal)
 ![React](https://img.shields.io/badge/Frontend-React-blue)
-![Dataset](https://img.shields.io/badge/Dataset-50%20resumes-orange)
+![Dataset](https://img.shields.io/badge/Dataset-60%20resumes-orange)
 ![NER F1](https://img.shields.io/badge/F1%20Score-84.58%25-brightgreen)
 
 - **Dataset:** 60 resumes (42 train, 8 dev, 10 test)  
