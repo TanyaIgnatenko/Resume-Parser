@@ -11,7 +11,7 @@ const nextConfig = {
   },
   async rewrites() {
     return [
-      { source: '/api/:path*', destination: 'http://212.164.218.218:45106/:path*' },
+      { source: '/parse', destination: 'http://212.164.218.218:45106/parse' },
     ];
   },
 }
