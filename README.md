@@ -51,7 +51,7 @@ Built with **spaCy (NER model)**, **FastAPI backend**, and **React frontend**.
 - **Frontend:** React / Next.js  
 - **Parsing Tools:** pdfplumber, docx2txt  
 - **Data Annotation:** Label Studio  
-- **DevOps & Tools:** Git, npm, Vercel
+- **DevOps & Tools:** Git, Docker, AWS, Vercel
 - **Methodologies:** Data preprocessing, tokenization, regex bootstrapping, model evaluation with F1/Precision/Recall  
 
 ---
