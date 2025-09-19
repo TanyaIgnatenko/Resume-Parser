@@ -2,8 +2,7 @@
 
 const API_BASE_URL =
   (typeof process !== "undefined" && (process as any).env?.NEXT_PUBLIC_API_URL) ||
-  (import.meta as any)?.env?.VITE_API_URL ||
-  "http://212.164.218.218:45106";
+  (import.meta as any)?.env?.VITE_API_URL;
 
 /** Normalized data your UI will consume */
 export interface ParsedResumeData {
@@ -83,7 +82,7 @@ export async function uploadResume(file: File): Promise<ApiResponse> {
 
   let res: Response;
   try {
-    res = await fetch(`/parse`, {
+     res = await fetch(`${API_BASE_URL}/parse`, {
       method: "POST",
       body: formData,
     });

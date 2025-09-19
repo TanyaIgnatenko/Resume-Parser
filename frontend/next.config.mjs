@@ -9,11 +9,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  async rewrites() {
-    return [
-      { source: '/parse', destination: 'http://212.164.218.218:45106/parse' },
-    ];
-  },
 }
 
 export default nextConfig
