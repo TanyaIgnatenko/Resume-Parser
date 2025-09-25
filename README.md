@@ -1,22 +1,23 @@
 # 📄 Resume Parser (AI-powered)
 
 An end-to-end **Resume Parser** that extracts structured information (Skills, Work Experience, Education, Languages) from resumes in **PDF/DOCX/TXT** formats.  
-Built with **spaCy (NER model)**, **FastAPI backend**, and **React frontend**.
+Built with **spaCy-transformers (RoBERTa-base fine-tuned)**, **FastAPI backend**, and **React frontend** - achieving **97.50% F1-score** on resume entity recognition.
 
 ---
 
 ## 🚀 Project Highlights
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
-![spaCy](https://img.shields.io/badge/NLP-spaCy-green)
+![spaCy](https://img.shields.io/badge/NLP-spaCy_transformers-green)
 ![FastAPI](https://img.shields.io/badge/API-FastAPI-teal)
 ![React](https://img.shields.io/badge/Frontend-React-blue)
 ![Dataset](https://img.shields.io/badge/Dataset-60%20resumes-orange)
-![NER F1](https://img.shields.io/badge/F1%20Score-84.58%25-brightgreen)
+![NER F1](https://img.shields.io/badge/F1%20Score-97.50%25-brightgreen)
+![Model](https://img.shields.io/badge/Model-RoBERTa--base-red)
 
 - **Dataset:** 60 resumes (42 train, 8 dev, 10 test)  
-- **Model:** Custom **spaCy NER** (trained from scratch)  
-- **Best Test F1-score:** **91.33%** (overall)  
+- **Model:** **spaCy transformer** (RoBERTa-base fine-tuned)  
+- **Best Test F1-score:** **97.50%** (overall)  
 - **Entities extracted:** Skills, Work Experience, Education, Languages  
 
 ---
@@ -46,31 +47,55 @@ Built with **spaCy (NER model)**, **FastAPI backend**, and **React frontend**.
 ## 🛠️ Tech Stack & Tools
 
 - **Languages:** Python, TypeScript  
-- **NLP Framework:** spaCy  
+- **NLP Framework:** **spaCy transformers** (RoBERTa-base)
 - **Backend:** FastAPI, Uvicorn  
 - **Frontend:** React / Next.js  
 - **Parsing Tools:** pdfplumber, docx2txt  
 - **Data Annotation:** Label Studio  
+- **Pretrained Model:** RoBERTa-base
 - **DevOps & Tools:** Git, Docker, AWS, Vercel
 - **Methodologies:** Data preprocessing, tokenization, regex bootstrapping, model evaluation with F1/Precision/Recall  
 
 ---
 
+## 🧠 Model Architecture
+
+The resume parser now uses a **fine-tuned transformer model** for superior entity recognition:
+
+### Transformer Backbone
+- **Base Model:** **RoBERTa-base** (125M parameters)
+- **Framework:** spaCy-transformers
+- **Training:** Fine-tuned on resume domain
+
+### Training Configuration
+- **Learning Rate:** 5e-5 with linear warmup
+- **Batch Size:** 128 with dynamic padding
+- **Max Steps:** 20,000 with early stopping (patience: 1,600 steps)
+- **Optimizer:** AdamW with weight decay
+
+### Advantages over Previous Model
+- ✅ **Better contextual understanding** of resume text
+- ✅ **Improved generalization** to unseen resume formats
+- ✅ **Higher accuracy** on complex entity boundaries
+- ✅ **State-of-the-art** transformer architecture
+---
 ## 🧠 Model Training
 
-The custom **spaCy NER model** was trained on manually annotated resumes.
+The **spaCy transformer model** was fine-tuned on manually annotated resumes using transfer learning:
 
-- **Dataset size:** 60 resumes  
+- **Base Model:** RoBERTa-base (pretrained on general text)
+- **Fine-tuning Dataset:** 60 annotated resumes  
 - **Split:**  
   - 42 resumes → Training  
   - 8 resumes → Development (validation)  
   - 10 resumes → Test (final evaluation)  
 
-Pipeline included:
-- Text cleaning & normalization  
-- Regex pre-labeling to speed up annotation  
-- Train/dev/test splitting for fair evaluation  
-- Iterative fine-tuning of model  
+### Training Pipeline:
+- Text extraction & normalization from PDF/DOCX
+- Transformer tokenization with RoBERTa tokenizer
+- Fine-tuning with spaCy's transformer NER architecture
+- Early stopping to prevent overfitting
+- Comprehensive evaluation on held-out test set
 
 ---
 
