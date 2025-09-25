@@ -1,7 +1,7 @@
 # 📄 Resume Parser (AI-powered)
 
 An end-to-end **Resume Parser** that extracts structured information (Skills, Work Experience, Education, Languages) from resumes in **PDF/DOCX/TXT** formats.  
-Built with **spaCy-transformers (RoBERTa-base fine-tuned)**, **FastAPI backend**, and **React frontend** - achieving **97.50% F1-score** on resume entity recognition.
+Built with **spaCy-transformers (RoBERTa-base fine-tuned)**, **FastAPI backend**, and **React frontend** - achieving **96.77% F1-score** on resume entity recognition.
 
 ---
 
@@ -17,7 +17,7 @@ Built with **spaCy-transformers (RoBERTa-base fine-tuned)**, **FastAPI backend**
 
 - **Dataset:** 60 resumes (42 train, 8 dev, 10 test)  
 - **Model:** **spaCy transformer** (RoBERTa-base fine-tuned)  
-- **Best Test F1-score:** **97.50%** (overall)  
+- **Best Test F1-score:** **96.77%** (overall)  
 - **Entities extracted:** Skills, Work Experience, Education, Languages  
 
 ---
@@ -105,18 +105,19 @@ On the held-out **test set (10 resumes)**:
 
 | Metric | Score |
 |--------|-------|
-| **Precision (NER P)** | 91.12% |
-| **Recall (NER R)**    | 91.55% |
-| **F1-score (NER F)**  | 91.33% |
+| **Precision (NER P)** | 95.02% |
+| **Recall (NER R)**    | 98.59% |
+| **F1-score (NER F)**  | 96.77% |
 
 ### Per-entity performance:
 
-| Entity     | Precision | Recall | F1    |
-|------------|-----------|--------|-------|
-| 🎓 Education | 86.21     | 75.76  | 80.65 |
-| 💼 Work Exp. | 69.23     | 81.82  | 75.00 |
-| 🎯 Skill     | 94.96     | 95.65  | 95.31 |
+| Entity       | Precision | Recall | F1    |
+|--------------|-----------|--------|-------|
+| 🎓 Education | 96.97     | 96.97  | 96.97 |
+| 💼 Work Exp. | 84.62     | 100.00 | 91.67 |
+| 🎯 Skill     | 95.77     | 98.55  | 97.14 |
 | 🌐 Language  | 100.00    | 100.00 | 100.00 |
+
 
 
 ⚡ **Why not accuracy?**  
@@ -129,7 +130,7 @@ For NER tasks, **accuracy is misleading** because the majority of tokens are *no
 I'm currently improving the accuracy of the Resume Parser using these methodologies:
 
 ### 📊 Data-Centric
-- Expanding dataset with more annotated resumes (beyond current 50).  
+- Expanding dataset with more annotated resumes (beyond current 60).  
 - Annotating more **Work Experience** and **Education** entities to address weaker categories.  
 - Reviewing and enforcing **annotation consistency** (e.g., clear rules for job titles, companies, skills).  
 
