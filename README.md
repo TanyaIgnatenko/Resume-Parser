@@ -1,7 +1,8 @@
-# 📄 Resume Parser (AI-powered)
+# 🤖 AI-Powered Resume Parser
 
-An end-to-end **Resume Parser** that extracts structured information (Skills, Work Experience, Education, Languages) from resumes in **PDF/DOCX/TXT** formats.  
-Built with **spaCy-transformers (RoBERTa-base fine-tuned)**, **FastAPI backend**, and **React frontend** - achieving **96.77% F1-score** on resume entity recognition.
+An end-to-end system that extracts **structured data**—Skills, Work Experience, Education, and Languages—from resumes in **PDF, DOCX, and TXT** formats.  
+
+Built with a **fine-tuned RoBERTa-base model** (via spaCy-transformers), a **FastAPI backend**, and a **React frontend**—achieving **96.77% F1-score** on resume entity recognition.
 
 ---
 
