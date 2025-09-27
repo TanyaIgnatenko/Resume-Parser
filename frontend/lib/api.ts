@@ -1,6 +1,6 @@
 // api.ts — Frontend service for the Resume Parser backend (FastAPI + spaCy)
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL!;
+const API_BASE_URL = '';
 
 /** Normalized data your UI will consume */
 export interface ParsedResumeData {
