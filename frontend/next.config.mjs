@@ -9,6 +9,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async rewrites() {
+    return [
+      { source: '/parse', destination: process.env.NEXT_PUBLIC_API_URL + '/parse' },
+    ];
+  },
 }
 
 export default nextConfig
