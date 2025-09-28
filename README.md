@@ -13,7 +13,7 @@ Built with a **fine-tuned RoBERTa-base model** (via spaCy-transformers), a **Fas
 ![FastAPI](https://img.shields.io/badge/API-FastAPI-teal)
 ![React](https://img.shields.io/badge/Frontend-React-blue)
 ![Dataset](https://img.shields.io/badge/Dataset-60%20resumes-orange)
-![NER F1](https://img.shields.io/badge/F1%20Score-97.50%25-brightgreen)
+![NER F1](https://img.shields.io/badge/F1%20Score-96.77%25-brightgreen)
 ![Model](https://img.shields.io/badge/Model-RoBERTa--base-red)
 
 - **Dataset:** 60 resumes (42 train, 8 dev, 10 test)  
