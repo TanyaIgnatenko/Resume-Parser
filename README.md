@@ -16,7 +16,7 @@ Built with a **fine-tuned RoBERTa-base model** (via spaCy-transformers), a **Fas
 ![NER F1](https://img.shields.io/badge/F1%20Score-96.77%25-brightgreen)
 ![Model](https://img.shields.io/badge/Model-RoBERTa--base-red)
 
-- **Dataset:** 60 resumes (42 train, 8 dev, 10 test)  
+- **Dataset:** 60 resumes (1,555 annotated entities)  (42 train, 8 dev, 10 test)  
 - **Model:** **spaCy transformer** (RoBERTa-base fine-tuned)  
 - **Best Test F1-score:** **96.77%** (overall)  
 - **Entities extracted:** Skills, Work Experience, Education, Languages  
