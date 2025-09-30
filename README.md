@@ -29,7 +29,7 @@ Built with a **fine-tuned RoBERTa-base model** (via spaCy-transformers), a **Fas
 ![Upload Resume Page](./screenshots/upload-2.png)
 
 **Parsed Resume Results**  
-![Parsed Resume Results](./screenshots/results-3.png)
+![Parsed Resume Results](./screenshots/results-4.png)
 
 ---
 
