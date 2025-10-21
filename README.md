@@ -25,7 +25,7 @@ Built with a **fine-tuned RoBERTa-base model** (via spaCy-transformers), a **Fas
 
 ## 🖼️ Demo
 
-![App demo](./screenshots/demo-3.gif)
+![App demo](./screenshots/demo.gif)
 
 ---
 
