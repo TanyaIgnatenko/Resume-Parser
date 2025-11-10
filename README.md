@@ -1,4 +1,4 @@
-# 🤖 End-to-End Resume AI System — Production-Ready NLP Pipeline
+# 🤖 End-to-End Resume AI Parser — Production-Ready NLP Pipeline
 
 An end-to-end system that extracts **structured data**—Skills, Work Experience, Education, and Languages—from resumes in **PDF, DOCX, and TXT** formats.  
 
