@@ -124,7 +124,7 @@ For NER tasks, **accuracy is misleading** because the majority of tokens are *no
 
 ## 🔧 Currently Improving Model Accuracy
 
-I'm currently improving the accuracy of the Resume Parser using these methodologies:
+I'm currently improving the accuracy of the Resume Parser using these methodologies:  
 
 ### 📊 Data-Centric
 - Expanding dataset with more annotated resumes (beyond current 60).  
